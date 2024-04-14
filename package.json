@@ -1,12 +1,13 @@
 {
-  "homepage": "https://pcarbono.github.io/movies"
+  "homepage": "https://pcarbono.github.io/movies",
   "name": "api",
   "version": "1.0.0",
-  "description": "![Como Conectarse a una API con Javascript usando Async, Await y Fetch](https://raw.githubusercontent.com/falconmasters/como-conectarse-a-una-api-javascript/master/img/thumb.png)",
+  "description": "![Como Conectarse a una API con Javascript usando Async, Await y Fetch]",
   "main": "app.js",
   "scripts": {
     "build": "if not exist build mkdir build && robocopy . build *.html *.css /s /njh /njs /ndl /nc /ns /np /xjd /xd build",
     "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

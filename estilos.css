@@ -14,11 +14,35 @@ body {
 	width: 90%;
 	max-width: 1000px;
 	margin: 40px auto 100px auto;
-
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	/* grid-template-columns: repeat(4, 1fr); */
 	gap: 40px;
 }
+
+@media screen and (max-width: 300px) {
+    .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 700px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1199px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contenedor {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 
 .contenedor .pelicula {
 	text-align: center;
@@ -46,7 +70,7 @@ body {
 	padding: 10px;
 }
 
-.paginacion button {
+/* .paginacion button {
 	cursor: pointer;
 	border: none;
 	display: flex;
@@ -61,8 +85,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	transition: .3s ease all;
-}
+} */
 
-.paginacion button:hover {
+/* .paginacion button:hover {
 	background: #137c32;
-}
+} */

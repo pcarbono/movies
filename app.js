@@ -51,8 +51,18 @@ let anterior = function() {
 	}
 }
 
+let home = function() {
+	if(pagina > 1){
+		pagina = 1;
+ 		cargarPeliculas();
+	}
+}
+
 btnSiguiente.addEventListener('click', siguiente);
 btnSiguiente.addEventListener('touchstart', siguiente);
 	
 btnAnterior.addEventListener('click', anterior);
 btnAnterior.addEventListener('touchstart', anterior);
+
+btnHome.addEventListener('click', home);
+btnHome.addEventListener('touchstart', home);
